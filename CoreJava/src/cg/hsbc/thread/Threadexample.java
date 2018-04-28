@@ -10,7 +10,7 @@ public class Threadexample
     {
         // Object of a class that has both produce()
         // and consume() methods
-        //final PC pc = new PC();
+        final PC pc = new PC();
  
         // Create producer thread
         Thread t1 = new Thread(new Runnable()
@@ -19,14 +19,14 @@ public class Threadexample
             public void run()
             {
             	System.out.println("Job1");
-                /*try
+                try
                 {
                     pc.produce();
                 }
                 catch(InterruptedException e)
                 {
                     e.printStackTrace();
-                }*/
+                }
             }
         });
  
@@ -37,14 +37,14 @@ public class Threadexample
             public void run()
             {
             	System.out.println("Job2");
-                /*try
+                try
                 {
                     pc.consume();
                 }
                 catch(InterruptedException e)
                 {
                     e.printStackTrace();
-                }*/
+                }
             }
         });
  
@@ -60,7 +60,7 @@ public class Threadexample
  
     // This class has a list, producer (adds items to list
     // and consumber (removes items).
-  /*  public static class PC
+    public static class PC
     {
         // Create a list shared by producer and consumer
         // Size of list is 2.
@@ -123,5 +123,5 @@ public class Threadexample
                 }
             }
         }
-    }*/
+    }
 }
