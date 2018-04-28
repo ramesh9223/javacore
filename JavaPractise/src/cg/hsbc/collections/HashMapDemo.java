@@ -17,6 +17,8 @@ public class HashMapDemo {
 		m.put("xyz", 200);
 		m.put("mno", 500);
 		
+		m.put("efg", 1000);
+		
 		System.out.println(m);//{pqr=800, abc=700, xyz=200, mno=500}
 		
 		System.out.println(m.put("abc", 1000));//put() return previous value//700
